@@ -9,7 +9,7 @@ namespace LoyaltyPointsAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddScoped<ILPDataServices, LPDBData>();
+            builder.Services.AddScoped<ILPDataServices,LPDBData>();
             builder.Services.AddScoped<LPDataServices>();
             builder.Services.AddScoped<LPAppServices>();
 
